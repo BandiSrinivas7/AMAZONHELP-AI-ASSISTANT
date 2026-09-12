@@ -1,0 +1,13 @@
+{
+  "brand": "AmazonHelp",
+  "total_rows": 2811774,
+  "raw_brand_tweets": 169840,
+  "selected_tweets": 334490,
+  "usable_conversations": 82541,
+  "reply_pairs": 163256,
+  "split_counts": {
+    "train": 57778,
+    "test": 12382,
+    "dev": 12381
+  }
+}

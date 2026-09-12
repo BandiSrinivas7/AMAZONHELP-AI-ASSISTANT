@@ -1,0 +1,38 @@
+{
+  "n_candidates": 24948,
+  "n_selected": 200,
+  "seed": 42,
+  "source_split": "test",
+  "brand": "AmazonHelp",
+  "sampling_strategy": "18 examples per suggested intent (11 intents = 198), plus 2 deliberately difficult/ambiguous unseen examples; final random shuffle.",
+  "suggested_intent_is_not_gold": true,
+  "human_fields": [
+    "intent_label",
+    "should_escalate_human",
+    "reply_quality_human"
+  ],
+  "distribution_suggested_intent": {
+    "other": 20,
+    "delivery_tracking_delay": 19,
+    "prime_membership": 19,
+    "missing_or_not_received": 18,
+    "cancel_order": 18,
+    "gift_card": 18,
+    "wrong_damaged_item": 18,
+    "payment_billing": 18,
+    "refund_return": 18,
+    "account_login": 18,
+    "address_delivery": 16
+  },
+  "distribution_difficulty": {
+    "standard": 147,
+    "ambiguous": 33,
+    "hard": 20
+  },
+  "distribution_length_bucket": {
+    "medium": 161,
+    "long": 32,
+    "short": 7
+  },
+  "annotation_instruction": "Annotator must read each customer message and independently choose the final human label. Suggested intent may be wrong and is only a sampling aid."
+}

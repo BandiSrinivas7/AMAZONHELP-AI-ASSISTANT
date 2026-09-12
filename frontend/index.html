@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AmazonHelp AI — Customer Support</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">amazon<span>.in</span></div>
+    <div class="location"><small>Deliver to</small><strong>India</strong></div>
+    <form id="searchForm" class="search">
+      <select aria-label="Category">
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Home</option>
+        <option>Books</option>
+      </select>
+      <input id="siteSearch" placeholder="Search Amazon.in" />
+      <button aria-label="Search">⌕</button>
+    </form>
+    <div class="header-link"><small>Hello, sign in</small><strong>Account & Lists ▾</strong></div>
+    <div class="header-link"><small>Returns</small><strong>& Orders</strong></div>
+    <div class="cart">🛒 <b>Cart</b></div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-left"><b>☰ All</b><span>Fresh</span><span>MX Player</span><span>Sell</span><span>Best Sellers</span><span>Today's Deals</span><span>Mobiles</span><span>Customer Service</span></div>
+    <div class="nav-right">Amazon Pay &nbsp; | &nbsp; New Releases</div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">AMAZONHELP • AI SUPPORT</p>
+        <h1>Need help with an order?</h1>
+        <p>Describe your issue and AmazonHelp AI will classify it, find relevant historical support evidence, draft a grounded reply, and decide whether a human should review it.</p>
+        <button class="primary" id="heroSupport">Get support</button>
+      </div>
+      <div class="hero-card">
+        <div class="ai-dot"></div>
+        <b>AmazonHelp AI</b>
+        <span>Evidence-grounded support drafting</span>
+        <div class="mini-row"><span>Intent</span><strong>delivery_tracking_delay</strong></div>
+        <div class="mini-row"><span>Decision</span><strong class="safe">AUTO-HANDLE</strong></div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="shopping-area">
+        <div class="section-title"><h2>Explore deals</h2><a href="#">See all</a></div>
+        <div class="cards">
+          <article class="deal-card"><div class="art headphones">🎧</div><h3>Starting ₹149 | Headphones from most loved brands</h3><p>Boat • Boult • Zebronics</p></article>
+          <article class="deal-card"><div class="art business">💻</div><h3>Wholesale pricing + 10% Assured cashback</h3><p>Smart devices • Speakers • PCs</p></article>
+          <article class="deal-card"><div class="art dryfruit">🥜</div><h3>Starting ₹199 | Dry fruits & seeds</h3><p>Almonds • Dates • Cashews • Chia</p></article>
+          <article class="deal-card"><div class="art storage">💾</div><h3>Up to 70% off | Storage devices & SSDs</h3><p>External HDD • SSD • Memory Card</p></article>
+        </div>
+
+        <div class="section-title"><h2>Popular categories</h2><a href="#">Shop now</a></div>
+        <div class="category-row">
+          <div><span>📱</span><b>Mobiles</b></div><div><span>💻</span><b>Computers</b></div>
+          <div><span>🏠</span><b>Home essentials</b></div><div><span>📚</span><b>Books</b></div>
+          <div><span>🎮</span><b>Gaming</b></div><div><span>👟</span><b>Fashion</b></div>
+        </div>
+      </div>
+
+      <aside class="support-panel" id="supportPanel">
+        <div class="panel-head">
+          <div><div class="bot-avatar">✦</div></div>
+          <div><b>AmazonHelp AI</b><small>Support assistant</small></div>
+          <span class="status">● Online</span>
+        </div>
+
+        <div id="chat" class="chat">
+          <div class="msg bot">Hi! Tell me what went wrong with your order, account, payment, delivery, return, or membership.</div>
+          <div class="suggestions">
+            <button>Package says delivered</button>
+            <button>Need a refund</button>
+            <button>Wrong or damaged item</button>
+            <button>Can't sign in</button>
+          </div>
+        </div>
+
+        <form id="supportForm" class="support-form">
+          <textarea id="message" minlength="3" placeholder="Describe your issue…" required></textarea>
+          <div class="form-row">
+            <span id="apiState">Backend: checking…</span>
+            <button class="primary" type="submit">Send ↗</button>
+          </div>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="back-top">Back to top</div>
+    <div class="footer-main">
+      <div><b>Get to Know Us</b><span>About Amazon</span><span>Careers</span><span>Press Releases</span></div>
+      <div><b>Connect with Us</b><span>Facebook</span><span>Twitter</span><span>Instagram</span></div>
+      <div><b>Make Money with Us</b><span>Sell on Amazon</span><span>Advertise Your Products</span></div>
+      <div><b>Let Us Help You</b><span>Your Account</span><span>Returns Centre</span><span>Help</span></div>
+    </div>
+    <div class="footer-bottom">© 2026 AmazonHelp AI demo • Built for the Hiver BrandSupport-AI project</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
